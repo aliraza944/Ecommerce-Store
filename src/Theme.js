@@ -50,6 +50,21 @@ const theme = createTheme({
           textDecoration: "none",
           color: "white",
         },
+        ".justifycenter": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        ".justifyspacebetween": {
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        },
+        ".justifyspacearound": {
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+        },
       },
     },
   },
