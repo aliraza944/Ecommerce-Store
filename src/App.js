@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider, Typography } from "@material-ui/core";
 
+import theme from "./Theme";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Typography variant="h1">hello world</Typography>
+      </ThemeProvider>
     </div>
   );
 }
