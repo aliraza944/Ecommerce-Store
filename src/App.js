@@ -1,6 +1,6 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/core";
-
+import Navigation from "./Components/Navigation";
 import theme from "./Theme";
 import Home from "./Pages/Home";
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Navigation />
         <Home />
       </ThemeProvider>
     </div>
