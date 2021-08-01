@@ -9,12 +9,6 @@ const Home = () => {
       <Box className="justifycenter">
         <Typography variant="h1"> new arival</Typography>
       </Box>
-      <Box className="justifycenter">
-        <Typography variant="h1"> Sale</Typography>
-      </Box>
-      <Box className="justifycenter">
-        <Typography variant="h1"> best sellers</Typography>
-      </Box>
     </div>
   );
 };

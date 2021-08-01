@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    "& .MuiAppBar-root": {
+      boxShadow: "none",
+    },
   },
   menuButton: {
     flexShrink: 0,

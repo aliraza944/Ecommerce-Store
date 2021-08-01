@@ -6,13 +6,15 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import useOpen from "../../Hooks/useOpen";
+import Modal from "@material-ui/core/Modal";
+import { Paper } from "@material-ui/core";
+import ModalElements from "./ModalElements";
 const Navigation = () => {
   const { open, handleClose, handleOpen } = useOpen();
-  console.log(open);
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed" color="transparent">
         <Toolbar>
           <div className={`justifyspacebetween ${classes.navelements}`}>
             <IconButton
@@ -21,10 +23,14 @@ const Navigation = () => {
               color="inherit"
               aria-label="menu"
             >
-              <MenuIcon onClick={() => handleOpen()} />
+              <MenuIcon />
             </IconButton>
             <div>
-              <Typography variant="h6" className={classes.title}>
+              <Typography
+                variant="h6"
+                className={classes.title}
+                onClick={() => handleOpen()}
+              >
                 Catalog
               </Typography>
             </div>
@@ -36,6 +42,15 @@ const Navigation = () => {
           </div>
         </Toolbar>
       </AppBar>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <ModalElements />
+      </Modal>
     </div>
   );
 };
