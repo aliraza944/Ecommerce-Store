@@ -1,6 +1,15 @@
-import { createTheme } from "@material-ui/core";
-const theme = createTheme({
+import { createTheme, responsiveFontSizes } from "@material-ui/core";
+let theme = createTheme({
   props: {
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg: 1024,
+        xl: 1920,
+      },
+    },
     MuiTypography: {
       variantMapping: {
         h1: "h1",
@@ -74,5 +83,6 @@ const theme = createTheme({
     },
   },
 });
+theme = responsiveFontSizes(theme);
 
 export default theme;
