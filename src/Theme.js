@@ -17,6 +17,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily: ["Inter", "sans-serif"].join(","),
     h1: {
       fontSize: "3rem",
       fontWeight: "300",
@@ -40,6 +41,11 @@ const theme = createTheme({
     h6: {
       fontSize: "1rem",
       fontWeight: "300",
+    },
+    body1: {
+      fontSize: "0.8rem",
+      fontWeight: "300",
+      textDecoration: "underline",
     },
   },
 

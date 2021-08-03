@@ -5,7 +5,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     "& .MuiAppBar-root": {
       boxShadow: "none",
-      color: "#f4f4f3",
+      backgroundColor: "black",
+      color: "white",
     },
   },
   menuButton: {

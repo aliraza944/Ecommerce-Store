@@ -14,32 +14,30 @@ const Hero = (props) => {
       }}
       className={classes.root}
     >
-      <Typography
-        variant="h4"
-        className="justifycenter"
-        style={{
-          position: "absolute",
-          top: "30%",
-          left: "40%",
-          color: "#f4f4f3",
-        }}
-      >
+      <Typography variant="h4" className={classes.herotitle}>
         Minimalism and varsitality
       </Typography>
-      <div className={classes.bottombar}>
-        <AppBar position="static">
-          <Toolbar className="justifyspacebetween">
-            <Typography variant="h6" className={classes.title}>
-              ...
-            </Typography>
-            <Typography variant="h4" className={classes.title}>
-              New Collection 20/21
-            </Typography>
-            <Typography variant="h6" className={classes.title}>
-              View all
-            </Typography>
-          </Toolbar>
-        </AppBar>
+
+      <div style={{ position: "absolute", bottom: "0", width: "100%" }}>
+        <div className={classes.bottomprice}>
+          <Typography variant="body1">White shirt</Typography>
+          <Typography variant="body1">12$</Typography>
+        </div>
+        <div className={classes.bottombar}>
+          <AppBar position="static">
+            <Toolbar className="justifyspacebetween">
+              <Typography variant="h6" className={classes.title}>
+                ...
+              </Typography>
+              <Typography variant="h5" className={classes.title}>
+                New Collection 20/21
+              </Typography>
+              <Typography variant="body1" className={classes.title}>
+                View all
+              </Typography>
+            </Toolbar>
+          </AppBar>
+        </div>
       </div>
     </div>
   );

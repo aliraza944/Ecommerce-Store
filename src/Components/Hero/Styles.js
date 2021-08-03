@@ -9,10 +9,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     postion: "relative",
+    display: "flex",
+    flexDirection: "column",
   },
   bottombar: {
-    position: "absolute",
-    bottom: 0,
     width: "100%",
     "& .MuiTypography-root": {
       color: "black",
@@ -20,6 +20,24 @@ const useStyles = makeStyles((theme) => ({
     },
     "& .MuiToolbar-root": {
       backgroundColor: "white",
+    },
+  },
+  herotitle: {
+    position: "absolute",
+    top: "30%",
+    left: "40%",
+    color: "#f4f4f3",
+  },
+  bottomprice: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    "& .MuiTypography-root": {
+      color: "#f4f4f3",
+      fontWeight: "500",
+      margin: "0  40px 0 0",
+      textDecoration: "none",
     },
   },
 }));
