@@ -8,6 +8,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import useOpen from "../../Hooks/useOpen";
 import { Hidden, Drawer } from "@material-ui/core";
 import WorkOutlineRoundedIcon from "@material-ui/icons/WorkOutlineRounded";
+import DrawerElements from "./DrawerElements";
 
 const Navigation = () => {
   const { open, handleClose, handleOpen } = useOpen();
@@ -24,7 +25,7 @@ const Navigation = () => {
               aria-label="menu"
               onClick={() => handleOpen()}
             >
-              <MenuIcon />
+              <MenuIcon style={{}} />
             </IconButton>
 
             <svg
@@ -54,13 +55,13 @@ const Navigation = () => {
             open={open}
             onClose={handleClose}
             classes={{
-              paper: classes.drawerPaper,
+              paper: classes.drawerpaper,
             }}
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
             }}
           >
-            <Typography variant="h1">hello</Typography>
+            <DrawerElements />
           </Drawer>
         </Hidden>
       </div>

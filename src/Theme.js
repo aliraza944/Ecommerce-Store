@@ -45,7 +45,6 @@ const theme = createTheme({
     body1: {
       fontSize: "0.8rem",
       fontWeight: "300",
-      textDecoration: "underline",
     },
   },
 
