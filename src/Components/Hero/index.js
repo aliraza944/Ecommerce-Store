@@ -1,9 +1,10 @@
-import { Typography, Button, Grid } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import React from "react";
 import herolg from "../../Images/hero-lg.jpg";
 import herosm from "../../Images/rsz_hero-sm.jpg";
 import heroadd from "../../Images/hero-add.jpg";
 import herogif from "../../Images/hero-gif.gif";
+import StyledButton from "../StyledButton";
 import useStyles from "./Styles";
 // style={{ height: "50vh" }}
 
@@ -29,9 +30,8 @@ const Hero = (props) => {
               <br />
               King to add edgy style to one of our best-sellers.
             </Typography>
-            <div>
-              <Button variant="contained">SHop sesh evo custom</Button>
-            </div>
+
+            <StyledButton title="SHop sesh evo custom"></StyledButton>
           </div>
         </Grid>
         <Grid item xs={12} sm={3} className={classes.griditem}>

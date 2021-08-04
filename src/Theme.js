@@ -65,6 +65,9 @@ let theme = createTheme({
           margin: "0",
           boxSizing: "border-box",
         },
+        body: {
+          margin: "0",
+        },
         ".link": {
           textDecoration: "none",
           color: "white",

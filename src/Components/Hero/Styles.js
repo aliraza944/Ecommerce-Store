@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    margin: "0",
   },
   griditem: {
     height: "100vh",
