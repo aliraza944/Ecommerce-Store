@@ -1,15 +1,15 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core";
 let theme = createTheme({
-  props: {
-    breakpoints: {
-      values: {
-        xs: 0,
-        sm: 600,
-        md: 960,
-        lg: 1024,
-        xl: 1920,
-      },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1024,
+      xl: 1920,
     },
+  },
+  props: {
     MuiTypography: {
       variantMapping: {
         h1: "h1",
@@ -60,6 +60,11 @@ let theme = createTheme({
   overrides: {
     MuiCssBaseline: {
       "@global": {
+        "*": {
+          padding: "0",
+          margin: "0",
+          boxSizing: "border-box",
+        },
         ".link": {
           textDecoration: "none",
           color: "white",

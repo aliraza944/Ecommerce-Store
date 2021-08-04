@@ -13,9 +13,26 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "1px solid #fff",
     },
   },
+  logo: {
+    cursor: "pointer",
+
+    width: "150px",
+    [theme.breakpoints.up("lg")]: {
+      width: "170px",
+    },
+  },
+  navicons: {
+    "& > *": {
+      margin: "0 0 0 40px",
+      cursor: "pointer",
+    },
+  },
   menuButton: {
     flexShrink: 0,
     lineHeight: "10px",
+    [theme.breakpoints.up("lg")]: {
+      display: "none",
+    },
   },
   drawerpaper: {
     width: "70%",
@@ -23,34 +40,12 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 0,
     cursor: "pointer",
+    textTransform: "uppercase",
+    margin: "0 0 0 20px",
+    fontWeight: "500",
   },
   navelements: {
     width: "100%",
-  },
-  modalpaper: {
-    width: "100%",
-    height: "100vh",
-    flexDirection: "column",
-    position: "relative",
-    backgroundColor: "#fafafa5c",
-    "& .MuiTypography-root": {
-      fontWeight: "400",
-      color: "white",
-      margin: "0 0 5px 0",
-    },
-    "& .MuiPaper-root": {
-      boxShadow: "none",
-    },
-  },
-  modalelements: {
-    marginTop: "10%",
-  },
-  closeicon: {
-    color: "white",
-    position: "absolute",
-    right: 0,
-    top: "10%",
-    cursor: "pointer",
   },
 }));
 export default useStyles;

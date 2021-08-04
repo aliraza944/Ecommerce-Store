@@ -1,43 +1,28 @@
-import { Typography } from "@material-ui/core";
+import { Typography, Button } from "@material-ui/core";
 import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-
+import herolg from "../../Images/hero-lg.jpg";
+import herosm from "../../Images/rsz_hero-sm.jpg";
 import useStyles from "./Styles";
 
 const Hero = (props) => {
   const classes = useStyles();
   return (
-    <div
-      style={{
-        backgroundImage: `url(${props.image})  ,linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1))`,
-      }}
-      className={classes.root}
-    >
-      <Typography variant="h4" className={classes.herotitle}>
-        Minimalism and varsitality
-      </Typography>
-
-      <div style={{ position: "absolute", bottom: "0", width: "100%" }}>
-        <div className={classes.bottomprice}>
-          <Typography variant="body1">White shirt</Typography>
-          <Typography variant="body1">12$</Typography>
-        </div>
-        <div className={classes.bottombar}>
-          <AppBar position="static">
-            <Toolbar className="justifyspacebetween">
-              <Typography variant="h6" className={classes.title}>
-                ...
-              </Typography>
-              <Typography variant="h5" className={classes.title}>
-                New Collection 20/21
-              </Typography>
-              <Typography variant="body1" className={classes.title}>
-                View all
-              </Typography>
-            </Toolbar>
-          </AppBar>
-        </div>
+    <div className={`justifycenter ${classes.root}`}>
+      <div className={classes.heroimage}>
+        <picture>
+          <source media="(min-width :600px)" srcSet={herolg}></source>
+          <img src={herosm} alt="heroimage" />
+        </picture>
+      </div>
+      <div className={classes.herotextsection}>
+        <Typography className={classes.herotexttitle} variant="h1">
+          KYUSS KING EXCLUSIVE.
+        </Typography>
+        <Typography variant="body1" classname={classes.herotext}>
+          We teamed up with pro surfer, artist and Boundary Breaker Kyuss King
+          to add edgy style to one of our best-sellers.
+        </Typography>
+        <Button>SHop sesh evo custom</Button>
       </div>
     </div>
   );
