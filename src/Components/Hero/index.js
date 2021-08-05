@@ -6,7 +6,6 @@ import heroadd from "../../Images/hero-add.jpg";
 import herogif from "../../Images/hero-gif.gif";
 import StyledButton from "../StyledButton";
 import useStyles from "./Styles";
-// style={{ height: "50vh" }}
 
 const Hero = (props) => {
   const classes = useStyles();
@@ -21,8 +20,8 @@ const Hero = (props) => {
               <img src={herosm} alt="heroimage" />
             </picture>
           </div>
-          <div className={classes.herotextsection}>
-            <Typography className={classes.herotexttitle} variant="h1">
+          <div className={`${classes.herotextsection} `}>
+            <Typography className={classes.herotexttitle} variant="h4">
               KYUSS KING EXCLUSIVE.
             </Typography>
             <Typography variant="body1" classname={classes.herotext}>
@@ -41,7 +40,7 @@ const Hero = (props) => {
           <div className={`${classes.columnitems} ${classes.herogif}`}>
             <img src={herogif} alt="gif"></img>
             <div className={classes.giftextsection}>
-              <Typography className={classes.giftexttitle} variant="h4">
+              <Typography className={classes.giftexttitle} variant="h5">
                 unleash your listning
               </Typography>
               <Typography variant="body1">Shop true wireless</Typography>

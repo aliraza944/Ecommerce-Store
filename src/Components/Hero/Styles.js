@@ -28,12 +28,18 @@ const useStyles = makeStyles((theme) => ({
   },
   herotextsection: {
     position: "absolute",
+    width: "100%",
     top: "25%",
     left: "0%",
     textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
     [theme.breakpoints.up("sm")]: {
       width: "40%",
       textAlign: "left",
+      alignItems: "flex-start",
       left: "5%",
     },
 

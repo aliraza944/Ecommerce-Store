@@ -27,34 +27,6 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: ["Inter", "sans-serif"].join(","),
-    h1: {
-      fontSize: "3rem",
-      fontWeight: "300",
-    },
-    h2: {
-      fontSize: "2.5rem",
-      fontWeight: "300",
-    },
-    h3: {
-      fontSize: "2rem",
-      fontWeight: "300",
-    },
-    h4: {
-      fontSize: "1.5rem",
-      fontWeight: "300",
-    },
-    h5: {
-      fontSize: "1.25rem",
-      fontWeight: "300",
-    },
-    h6: {
-      fontSize: "1rem",
-      fontWeight: "300",
-    },
-    body1: {
-      fontSize: "0.8rem",
-      fontWeight: "300",
-    },
   },
 
   overrides: {
