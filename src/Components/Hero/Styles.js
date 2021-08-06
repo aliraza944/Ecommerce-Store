@@ -4,18 +4,23 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "0",
   },
-  griditem: {
-    height: "100vh",
-  },
-  columnitems: {
-    height: "50vh",
-  },
+
   gridparent: {
     "& img": {
       width: "100%",
       height: "100%",
       margin: "0",
       objectFit: "cover",
+    },
+  },
+  columnitems: {
+    dispaly: "flex",
+    flexDirection: "column",
+    width: "100%",
+    height: "50%",
+    "& div": {
+      width: "100%",
+      height: "100%",
     },
   },
   heroimage: {
@@ -25,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   },
   herogif: {
     position: "relative",
+    width: "100%",
+    "& img ": {
+      width: "100%",
+      height: "100%",
+    },
   },
   herotextsection: {
     position: "absolute",

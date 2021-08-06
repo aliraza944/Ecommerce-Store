@@ -12,7 +12,7 @@ const Hero = (props) => {
   return (
     <div className={`justifycenter ${classes.root}`}>
       <Grid container spacing={0} className={classes.gridparent}>
-        <Grid item xs={12} sm={9} className={classes.griditem}>
+        <Grid item xs={12} sm={9}>
           {" "}
           <div className={classes.heroimage}>
             <picture>
@@ -33,17 +33,20 @@ const Hero = (props) => {
             <StyledButton title="SHop sesh evo custom"></StyledButton>
           </div>
         </Grid>
-        <Grid item xs={12} sm={3} className={classes.griditem}>
+        <Grid item xs={12} sm={3}>
           <div className={classes.columnitems}>
-            <img src={heroadd} alt="add"></img>
-          </div>
-          <div className={`${classes.columnitems} ${classes.herogif}`}>
-            <img src={herogif} alt="gif"></img>
-            <div className={classes.giftextsection}>
-              <Typography className={classes.giftexttitle} variant="h5">
-                unleash your listning
-              </Typography>
-              <Typography variant="body1">Shop true wireless</Typography>
+            <div className={classes.img1}>
+              <img src={heroadd} alt="add"></img>
+            </div>
+
+            <div className={` ${classes.herogif}`}>
+              <img src={herogif} alt="gif"></img>
+              <div className={classes.giftextsection}>
+                <Typography className={classes.giftexttitle} variant="h5">
+                  unleash your listning
+                </Typography>
+                <Typography variant="body1">Shop true wireless</Typography>
+              </div>
             </div>
           </div>
         </Grid>
