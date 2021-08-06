@@ -2,12 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh",
-
-    " & .MuiBox-root": {
-      height: "100vh",
-      backgroundColor: "yellow",
-    },
+    width: "100%",
   },
 }));
 export default useStyles;
