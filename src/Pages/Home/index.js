@@ -5,6 +5,7 @@ import Card from "../../Components/Card";
 import Section from "../../Components/Section";
 import homesection from "../../Images/homesection.jpg";
 import homesectionmobile from "../../Images/homesectionmobile.jpg";
+import Footer from "../../Components/Footer";
 const Home = () => {
   const classes = useStyles();
   return (
