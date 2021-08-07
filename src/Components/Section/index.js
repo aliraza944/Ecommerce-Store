@@ -8,7 +8,7 @@ const Section = (props) => {
   return (
     <div className={classes.root}>
       <picture className={classes.sectionimage}>
-        <source media="(min-width : 600px)" srcset={props.src1}></source>
+        <source media="(min-width : 600px)" srcSet={props.src1}></source>
         <img src={props.src2} alt="heroimage" />
       </picture>
       <div

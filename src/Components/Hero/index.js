@@ -16,7 +16,7 @@ const Hero = (props) => {
           {" "}
           <div className={classes.heroimage}>
             <picture>
-              <source media="(min-width : 600px)" srcset={herolg}></source>
+              <source media="(min-width : 600px)" srcSet={herolg}></source>
               <img src={herosm} alt="heroimage" />
             </picture>
           </div>
@@ -24,7 +24,7 @@ const Hero = (props) => {
             <Typography className={classes.herotexttitle} variant="h4">
               KYUSS KING EXCLUSIVE.
             </Typography>
-            <Typography variant="body1" classname={classes.herotext}>
+            <Typography variant="body1" className={classes.herotext}>
               We teamed up with pro surfer, artist and Boundary Breaker Kyuss
               <br />
               King to add edgy style to one of our best-sellers.

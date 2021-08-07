@@ -6,7 +6,6 @@ const useStyles = makeStyles({
     minWidth: 45,
     width: "100%",
     position: "relative",
-
     "& .MuiCardContent-root": {
       position: "absolute",
       top: "0",
