@@ -5,13 +5,28 @@ import Card from "../../Components/Card";
 import Section from "../../Components/Section";
 import homesection from "../../Images/homesection.jpg";
 import homesectionmobile from "../../Images/homesectionmobile.jpg";
-import Footer from "../../Components/Footer";
+import Slider from "../../Components/Slider";
+import { Container, Grid, Hidden } from "@material-ui/core";
+import { carddata } from "./CardSectionData";
 const Home = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Hero />
-      <Card />
+      <Hidden smUp>
+        <Slider />
+      </Hidden>
+      <Hidden xsDown>
+        <Grid container spacing={0}>
+          {carddata.map((item) => {
+            return (
+              <Grid key={item.id} item xs={4}>
+                <Card image={item.image} imagehover={item.imagehover} />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Hidden>
       <Section
         title="your new workout partner"
         btn="shop push ultra"
