@@ -2,9 +2,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    margin: "40px 0 0 0 ",
-    maxWidth: 345,
+    margin: "0 0 0 0 ",
+    minWidth: 45,
+    width: "100%",
     position: "relative",
+
     "& .MuiCardContent-root": {
       position: "absolute",
       top: "0",

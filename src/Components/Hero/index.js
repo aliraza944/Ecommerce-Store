@@ -34,6 +34,7 @@ const Hero = (props) => {
           </div>
         </Grid>
         <Grid item xs={12} sm={3}>
+          {" "}
           <div className={classes.columnitems}>
             <div className={classes.img1}>
               <img src={heroadd} alt="add"></img>
