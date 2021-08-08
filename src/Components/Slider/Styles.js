@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 8px",
   },
   slider: {
-    animation: `$fadeeffect 3000ms ${theme.transitions.easing.easeInOut} 0ms forwards`,
+    animation: `$fadeeffect 3000ms ${theme.transitions.easing.easeInOut} 0ms `,
   },
   "@keyframes fadeeffect": {
     "0%": {
