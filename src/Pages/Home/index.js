@@ -6,7 +6,7 @@ import Section from "../../Components/Section";
 import homesection from "../../Images/homesection.jpg";
 import homesectionmobile from "../../Images/homesectionmobile.jpg";
 import Slider from "../../Components/Slider";
-import { Container, Grid, Hidden } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 import { carddata } from "./CardSectionData";
 const Home = () => {
   const classes = useStyles();

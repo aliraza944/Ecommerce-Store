@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import useStyles from "./Styles";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -6,6 +6,7 @@ import { carddata } from "../../Pages/Home/CardSectionData";
 import Card from "../Card";
 
 const Slider = () => {
+  const slideRef = useRef(null);
   const [slider, setSlider] = useState(0);
   const classes = useStyles();
   const prevSlide = () => {
@@ -14,6 +15,10 @@ const Slider = () => {
     } else {
       setSlider(slider - 1);
     }
+    slideRef.current.classList.add(`${classes.slider}`);
+    setTimeout(() => {
+      slideRef.current.classList.remove(`${classes.slider}`);
+    }, 1000);
   };
 
   const nextSlide = () => {
@@ -22,10 +27,14 @@ const Slider = () => {
     } else {
       setSlider(slider + 1);
     }
+    slideRef.current.classList.add(`${classes.slider}`);
+    setTimeout(() => {
+      slideRef.current.classList.remove(`${classes.slider}`);
+    }, 1000);
   };
   return (
     <div className={classes.root}>
-      <div>
+      <div ref={slideRef}>
         <Card image={carddata[slider].image} slider />
       </div>
 

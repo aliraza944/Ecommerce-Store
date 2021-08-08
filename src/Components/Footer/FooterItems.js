@@ -3,7 +3,7 @@ import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AddIcon from "@material-ui/icons/Add";
-import { makeStyles, Typography, Hidden } from "@material-ui/core";
+import { Typography, Hidden } from "@material-ui/core";
 import useStyles from "./Styles";
 const FooterItems = () => {
   const classes = useStyles();
