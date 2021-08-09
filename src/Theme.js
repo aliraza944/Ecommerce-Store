@@ -39,6 +39,7 @@ let theme = createTheme({
         },
         body: {
           margin: "0",
+          color: "white",
         },
         ".link": {
           textDecoration: "none",

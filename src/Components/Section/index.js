@@ -12,11 +12,16 @@ const Section = (props) => {
         <img src={props.src2} alt="heroimage" />
       </picture>
       <div
-        className={`${classes.sectiontext} justifycenter`}
-        style={{ right: `${props.left && "55%"}` }}
+        className={`${classes.sectiontext} `}
+        style={{ left: `${props.left && "1.5%"}` }}
       >
-        {props.title && <Typography variant="h5">{props.title}</Typography>}
+        {props.title && <Typography variant="h4">{props.title}</Typography>}
         {props.des && <Typography variant="body1">{props.des}</Typography>}
+        <div>
+          {props.price && (
+            <Typography variant="body1">{props.price}$</Typography>
+          )}
+        </div>
         {props.btn && <StyledButton title={props.btn}></StyledButton>}
       </div>
     </div>

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     right: "5%",
     width: "40%",
     flexDirection: "column",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("md")]: {
       width: "100%",
       top: "12%",
       textAlign: "center",
@@ -30,12 +30,17 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTypography-root": {
       color: "white",
     },
-    "& .MuiTypography-h5": {
-      fontWeight: "600",
+    "& .MuiTypography-h4": {
+      fontWeight: "800",
       textTransform: "uppercase",
     },
-    "& .MuiTypography-h6": {
+    "& .MuiTypography-body1": {
       fontWeight: "400",
+      textTransform: "uppercase",
+    },
+    "& .MuiTypography-body2": {
+      fontWeight: "400",
+      textTransform: "uppercase",
     },
   },
 }));
