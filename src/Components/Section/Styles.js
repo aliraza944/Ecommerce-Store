@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: "25%",
     right: "5%",
-    width: "40%",
+    width: "30%",
     flexDirection: "column",
     [theme.breakpoints.down("md")]: {
       width: "100%",

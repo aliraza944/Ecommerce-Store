@@ -6,5 +6,11 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     backgroundColor: "black",
   },
+  herocontainer: {
+    position: "relative",
+  },
+  productcontainer: {
+    position: "relative",
+  },
 }));
 export default useStyles;

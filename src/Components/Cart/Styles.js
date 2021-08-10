@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px 20px",
     maxWidth: "600px",
     position: "static",
-
+    margin: "10px 0 0 0",
     [theme.breakpoints.up("md")]: {
       position: "absolute",
       top: "45%",

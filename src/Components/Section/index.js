@@ -13,10 +13,26 @@ const Section = (props) => {
       </picture>
       <div
         className={`${classes.sectiontext} `}
-        style={{ left: `${props.left && "1.5%"}` }}
+        style={{
+          left: `${props.left && "1.5%"}`,
+        }}
       >
-        {props.title && <Typography variant="h4">{props.title}</Typography>}
-        {props.des && <Typography variant="body1">{props.des}</Typography>}
+        {props.title && (
+          <Typography
+            style={{ color: `${props.black && "black"}` }}
+            variant="h4"
+          >
+            {props.title}
+          </Typography>
+        )}
+        {props.des && (
+          <Typography
+            style={{ color: `${props.black && "black"}` }}
+            variant="body1"
+          >
+            {props.des}
+          </Typography>
+        )}
         <div>
           {props.price && (
             <Typography variant="body1">{props.price}$</Typography>
