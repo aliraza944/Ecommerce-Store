@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
   },
   sectiontext: {
     position: "absolute",
-    top: "25%",
-    right: "5%",
-    width: "30%",
+    top: "15%",
+    right: "0%",
+    width: "40%",
     flexDirection: "column",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("xs")]: {
       width: "100%",
-      top: "12%",
+      top: "5%",
       textAlign: "center",
       right: "0% !important",
     },

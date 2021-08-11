@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "flex-start",
     padding: "10px 20px",
-    maxWidth: "600px",
     position: "static",
 
     [theme.breakpoints.up("md")]: {
