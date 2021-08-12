@@ -3,15 +3,12 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    borderBottom: "1px solid #fff",
     "& .MuiAppBar-root": {
       boxShadow: "none",
       backgroundColor: "black",
       color: "white",
     },
-    "& .MuiToolbar-root": {
-      borderBottom: "1px solid #fff",
-    },
+    "& .MuiToolbar-root": {},
   },
   logo: {
     cursor: "pointer",
