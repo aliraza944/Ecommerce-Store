@@ -14,7 +14,10 @@ import blue92 from "../../Images/92blue.jpg";
 import black92 from "../../Images/92black.jpg";
 import StyleButton from "../../Components/StyledButton";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
+import { useCart, useUpdateCart } from "../../Store";
 const Cart = () => {
+  const cart = useCart();
+  const setMyCart = useUpdateCart();
   const [product, setProduct] = useState("");
   const classes = useStyles();
   return (
@@ -85,8 +88,12 @@ const Cart = () => {
         </Select>
       </FormControl>
       <div className={classes.cartbutton}>
-        <StyleButton title="1" />
-        <Button variant="contained" className={classes.cartbtn}>
+        <StyleButton title={`${cart}`} />
+        <Button
+          variant="contained"
+          className={classes.cartbtn}
+          onClick={setMyCart}
+        >
           {" "}
           Add to Cart
         </Button>

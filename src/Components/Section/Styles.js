@@ -4,6 +4,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     position: "relative",
+    margin: "0px 0 0 0",
   },
   sectionimage: {
     "& img": {

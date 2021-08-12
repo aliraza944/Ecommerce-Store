@@ -6,24 +6,27 @@ import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Store } from "./Store";
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Navigation />
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/product">
-              <Product />
-            </Route>
-          </Switch>
-        </Router>
-        <Footer />
-      </ThemeProvider>
+      <Store>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Navigation />
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/product">
+                <Product />
+              </Route>
+            </Switch>
+          </Router>
+          <Footer />
+        </ThemeProvider>
+      </Store>
     </div>
   );
 }
