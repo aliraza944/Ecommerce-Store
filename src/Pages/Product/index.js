@@ -1,6 +1,7 @@
 import React from "react";
 import useStyles from "./Styles";
 import Section from "../../Components/Section";
+import ScrollAddToCart from "../../Components/ScrollAddToCart";
 import producthero from "../../Images/product-hero.jpg";
 import productheromobile from "../../Images/product-hero-mobile.jpg";
 import Cart from "../../Components/Cart";
@@ -27,6 +28,7 @@ const Product = () => {
   return (
     <div className={classes.root}>
       <div className={classes.herocontainer}>
+        <ScrollAddToCart />
         <Section
           src1={producthero}
           src2={productheromobile}

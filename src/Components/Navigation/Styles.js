@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "black",
       color: "white",
     },
-    "& .MuiToolbar-root": {},
   },
   logo: {
     cursor: "pointer",
