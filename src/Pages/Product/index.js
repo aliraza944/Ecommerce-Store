@@ -23,6 +23,7 @@ import plantmobile from "../../Images/Product/plantmobile.jpg";
 import planticon from "../../Images/Product/planticon.png";
 import skull from "../../Images/Product/skullcandyicon.png";
 import feel from "../../Images/Product/feel.png";
+import YoutubeEmbed from "../../Components/YoutubeEmbed";
 const Product = () => {
   const classes = useStyles();
   return (
@@ -43,6 +44,8 @@ const Product = () => {
         <Section src1={product1} src2={productmobile1} />
         <ProductFeatures />
       </div>
+      <YoutubeEmbed embedId="6TKi31lepyk" />
+
       <Section
         src1={product2}
         src2={productmobile2}
@@ -58,6 +61,7 @@ const Product = () => {
           des="Hesh Evo is the unrivaled everyday headphone for people who want to keep it simple. Along with outstanding sound, they’re engineered with just the right amount of added features to make your life a little easier."
           black
         />
+
         <ProductDescription />
       </div>
       <Section

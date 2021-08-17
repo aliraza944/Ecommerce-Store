@@ -8,6 +8,10 @@ import homesectionmobile from "../../Images/homesectionmobile.jpg";
 import Slider from "../../Components/Slider";
 import { Grid, Hidden } from "@material-ui/core";
 import { carddata } from "./CardSectionData";
+import homesection2mobile from "../../Images/homesection2mobile.jpg";
+import homesection2 from "../../Images/homesection2.jpg";
+import homesection3mobile from "../../Images/homesection3mobile.jpg";
+import homesection3 from "../../Images/homesection3.jpg";
 const Home = () => {
   const classes = useStyles();
   return (
@@ -35,6 +39,8 @@ const Home = () => {
         src1={homesection}
         src2={homesectionmobile}
       />
+      <Section src1={homesection2} src2={homesection2mobile} />
+      <Section src1={homesection3} src2={homesection3mobile} />
     </div>
   );
 };
