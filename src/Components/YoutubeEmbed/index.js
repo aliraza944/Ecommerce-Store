@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
 import useStyles from "./Styles.js";
+import React from "react";
+import PropTypes from "prop-types";
+import useVideo from "../../Hooks/useVideo.js";
 const YoutubeEmbed = ({ embedId }) => {
   const classes = useStyles();
-  const [play, setplay] = useState(0);
-  const videoplay = () => {
-    setplay(1);
-  };
-  const videostop = () => {
-    setplay(0);
-  };
+  const { play, videoplay, videostop } = useVideo();
   return (
     <div className={classes.videoResponsive}>
       <iframe
@@ -27,9 +22,7 @@ const YoutubeEmbed = ({ embedId }) => {
     </div>
   );
 };
-
 YoutubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired,
 };
-
 export default YoutubeEmbed;
